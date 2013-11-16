@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EliaChenFrameWork
+</name>
+</assembly>
+<members>
+<member name="T:EliachenFw.Engine.CircleEngine">
+	<summary>
+ 循环引擎用于轮询一个任务
+ </summary>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:EliachenFw.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:EliachenFw.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountRecv">
+	<summary>
+ 次数：接收的次数（只针对字节流）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountRecvRight">
+	<summary>
+ 次数:收到正确数据的总次数（符合基本解码）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountRecvActive">
+	<summary>
+ 次数：通讯正确的总次数（符合条件的正确回应,具有正确的交互）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.LastTimeRecv">
+	<summary>
+时间: 上次正确读取命令的时间（编码）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.LastTimeReadActive">
+	<summary>
+时间: 上次正确读取命令的时间（逻辑）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountSend">
+	<summary>
+ 次数：命令发送次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.LastTimeSend">
+	<summary>
+ 时间：上次发送时间
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountRecvTimeOut">
+	<summary>
+ 次数：超时次数(命令下发后没有在规定时间内响应)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountRetrie">
+	<summary>
+ 次数:重试总次数（返回错误命令或者超时的重试次数）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountAppErr">
+	<summary>
+ 次数：错误总次数（程序处理上的错误）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CoutReadQueue">
+	<summary>
+ 次数：等待处理的队列个数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayStatistics.CountWrite">
+	<summary>
+ 次数：下置的次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayConfig.TimeScan">
+	<summary>
+ 设备的扫描时间（轮询过程中设备的停等时间）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayConfig.TimeOrderOut">
+	<summary>
+ 命令与命令间的间隔时间（等待一条命令超时的时间）
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayConfig.CountReadFailReTry">
+	<summary>
+ 一次采集失败后的重试次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayConfig.CountWriteFailReTry">
+	<summary>
+ 一次下置失败后的重试次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayConfig.CountCommErr">
+	<summary>
+ 判断通讯失败的次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommWayConfig.TimeErrResume">
+	<summary>
+ 故障恢复的时间
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.DataType.EliaBinary.ByteToBinay(System.Byte)">
+	<summary>
+ 获取关于2进制的数组,将一个byte转化为Binary
+ </summary>
+	<param name="_Byte"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.DataType.EliaBinary.BinayToByte(EliachenFw.Data.DataType.EliaBinary)">
+	<summary>
+ 将2进制转化成Byte
+ </summary>
+	<param name="_eb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.DataType.EliaBinary.BinaryReadRange(EliachenFw.Data.DataType.EliaBinary,System.Byte,System.Byte)">
+	<summary>
+ 读取从指定位置开始的2进制,并指定长度，最低为0位
+ </summary>
+	<param name="index"></param>
+	<param name="len"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.DataType.EliaBinary.BinaryStrToInt(System.String,System.Type)">
+	<summary>
+  将一个二进制的字符串转换成对应的整型（非标准长度）
+ </summary>
+	<param name="_BinaryStr">二进制字符串</param>
+	<param name="_T">数据类型:有符号类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.DataType.EliaBinary.ArrByteToStr(System.Byte[])">
+	<summary>
+ 将字节数组转换为二进制字符串
+ (从低到高的转换，有补零)
+ </summary>
+	<param name="_ArrByte"></param>
+	<returns></returns>
+	<remarks>ss</remarks>
+</member><member name="T:EliachenFw.Data.DataType.EliaBinary">
+	<summary>
+ 声明几位2进制
+ </summary>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPort.CommPortWay">
+	<summary>
+ 通讯收发的处理参数及其模式
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPort.CommStatics">
+	<summary>
+ 通讯过程中的数据统计
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPort.Connect">
+	<summary>
+ 连接建立
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPort.DisConnect">
+	<summary>
+ 断开连接
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ICommPort.RecvDataHandle">
+	<summary>
+ 委托：数据收到的字节数组
+ </summary>
+	<param name="RecvArrByte">接收到的字节数组</param>
+	<remarks></remarks>
+</member><member name="E:EliachenFw.Comm.CommPort.ICommPort.RecvDataEvent">
+	<summary>
+ 事件：数据来到后的字节数组
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPort.Send(System.Byte[])">
+	<summary>
+ 发送数据的接口
+ </summary>
+	<param name="SendArrByte"></param>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPort.Receive">
+	<summary>
+ 接收数据接口（及时的,一次把缓冲区的数据取出来）
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPort.ReceiveAsWay(EliachenFw.Comm.CommPort.ICommPortWay)">
+	<summary>
+ 接收数据接口(约定格式)
+ </summary>
+	<param name="Way"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ICommPort">
+	<summary>
+ 通讯管理必须的通讯管理接口
+ 定义: 数据局接收的接口
+ 定义：数据发出的接口
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.Model_Straight">
+	<summary>
+ 直接模式
+ 直接返回通讯口当前能读到的所有数据
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ComPortWay.Model_Delay.GetDelayData(EliachenFw.Comm.CommPort.ICommPort@,System.Int32)">
+	<summary>
+ 延迟获取数据模式
+ </summary>
+	<param name="CommPort">通讯端口</param>
+	<param name="DelayTime">延迟时间</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.Model_Delay">
+	<summary>
+ 延迟模式
+ 延迟回检测直到读出所有缓存中的数据
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.#ctor(System.String,System.String)">
+	<summary>
+ 通过字符串来设定
+ </summary>
+	<param name="_ConnStr">连接字符串</param>
+	<param name="_ProvidName">新建对象所需的命名空间</param>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.#ctor(System.String,EliachenFw.Data.EliaSql.EliaSqlHelper.EliaDBType)">
+	<summary>
+ 通过自定义类型来表征
+ </summary>
+	<param name="_ConnStr">连接字符串</param>
+	<param name="_DBType">连接数据库的类型</param>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.ExecuteSql(System.String)">
+	<summary>
+ 执行SQL语句，返回影响的记录数
+ </summary>
+	<param name="SQLString">SQL语句</param>
+	<returns>影响的记录数</returns>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.ExecuteSqlTran(System.Collections.Generic.List{System.String})">
+	<summary>
+ 执行多条SQL语句，实现数据库事务。
+ </summary>
+	<param name="SQLStringList">多条SQL语句</param>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.GetSingle(System.String)">
+	<summary>
+ 执行一条计算查询结果语句，返回查询结果（object）。
+ </summary>
+	<param name="SQLString">计算查询结果语句</param>
+	<returns>查询结果（object）</returns>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.ExecuteReader(System.String)">
+	<summary>
+ 执行查询语句，返回SqlDataReader ( 注意：调用该方法后，一定要对SqlDataReader进行Close )
+ </summary>
+	<param name="strSQL">查询语句</param>
+	<returns>SqlDataReader</returns>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.Query(System.String)">
+	<summary>
+ 执行查询语句，返回DataSet
+ </summary>
+	<param name="SQLString">查询语句</param>
+	<returns>DataSet</returns>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.ExcutePar(System.String,System.Data.Common.DbParameter[])">
+	<summary>
+ 执行查询语句
+ </summary>
+	<param name="SqlStr">执行的Sql语句</param>
+	<param name="cmdParms">参数列表</param>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.UpDateFromDataTable(System.Data.DataTable,System.String)">
+	<summary>
+ 整表的修改
+ </summary>
+	<param name="UpdataDt">需求修改的表</param>
+	<param name="TableName">对应表在数据库中的位置</param>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Engine.IEngineJob">
+	<summary>
+ 在循环引擎内执行的动作
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.BasicCode.DeCode.Check_StableFrame(System.Byte[])">
+	<summary>
+ 检测是否符合要求的固定帧
+ </summary>
+	<param name="_ByteArr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.BasicCode.DeCode.DeCode_StableFrame(System.Byte[])">
+	<summary>
+ 对于固定帧的解码
+ </summary>
+	<param name="_ByteArr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.BasicCode.DeCode.Check_unStableFrame(System.Byte[])">
+	<summary>
+ 检测不定帧结构是否正确
+ </summary>
+	<param name="_ByteArr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.BasicCode.DeCode.DeCode_unStableFrame(System.Byte[])">
+	<summary>
+ 对于不定帧解码的结果
+ </summary>
+	<param name="_ByteArr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.CodeStM">
+	<summary>
+ 控制域结构,主-&gt;从
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.CodeStS">
+	<summary>
+ 控制域结构,从-&gt;主
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt">
+	<summary>
+ ASDU结构体
+ </summary>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.IComm.CommListRecver">
+	<summary>
+ 通讯的接收对象
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.IComm.CommEngine">
+	<summary>
+ 通讯的循环引擎
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommRecver.CommId">
+	<summary>
+ 通讯的标识：唯一的编号
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommRecver.CommParallelable">
+	<summary>
+ 通讯的并行性：可以同时召测
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommRecver.CommPort">
+	<summary>
+ 通讯接口
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommRecver.CommRecvBuffer">
+	<summary>
+ 通讯:接收信息缓存列表
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommRecver.CommWayConfig">
+	<summary>
+ 通信策略:参数设置
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommInterface.ICommRecver.CommStatistics">
+	<summary>
+ 通信策略:结果参数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.CommInitial">
+	<summary>
+ 通讯初始化
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.CommReset">
+	<summary>
+ 通讯复位
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.CommDispose">
+	<summary>
+ 通讯
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.Comm_WhenErr_Read_OverTime">
+	<summary>
+ 通讯错误处理函数：超时
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.Comm_WhenErr_Read_ErrRecv">
+	<summary>
+ 通讯错误处理函数：无正确的返回
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.Excute(System.Byte[])">
+	<summary>
+ 接收到数据的处理方法
+ </summary>
+	<param name="ArrByte"></param>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.CommOrder_Read(EliachenFw.Comm.CommInterface.ICommOrder)">
+	<summary>
+ 读命令：单次命令下发的结果
+ </summary>
+	<param name="_Order"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommRecver.CommOrder_Write(EliachenFw.Comm.CommInterface.ICommOrder)">
+	<summary>
+ 写命令：单次命令下发的结果
+ </summary>
+	<param name="_Order"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.Model_Strgt_Jud">
+	<summary>
+ 直接模式+校验模式
+ 直接模式基础上,进行数据校验
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.CopyOfModel_Strgt_Jud">
+	<summary>
+ 直接模式+校验模式
+ 直接模式基础上,进行数据校验
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_5_Inf">
+	<summary>
+ Asdu5 复位通讯单元
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_1_Inf">
+	<summary>
+ Asdu1 遥信
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_2_Inf">
+	<summary>
+ ASDU_2 事故信号的数据格式
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_23_Inf">
+	<summary>
+ Asdu23 扰动数据表
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_28_Inf">
+	<summary>
+ ASDU28（1CH） 带标志的状态变位传输准备就绪
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_29_Inf">
+	<summary>
+ ASDU29（1DH） 带标志的状态变位传输
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_27_Inf">
+	<summary>
+ ASDU27（1BH） 被记录的通道传输准备就绪,获取额定值
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_30_Inf">
+	<summary>
+ ASDU30（1EH）传输扰动值,通道数据
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_9_50_Inf">
+	<summary>
+ ASDU50（32H）遥测值
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_36_Inf">
+	<summary>
+ ASDU36（24H）电能脉冲上传
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AsduInf.Asdu_10_Inf">
+	<summary>
+ ASDU(0AH)通用信息单元
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.ModBusSlave.ModBusSlave.ModBusSlaveReg.Reg_Ex(System.Collections.Generic.List{System.Object},System.String)">
+	<summary>
+ 修改寄存器中的值,校验方式
+ </summary>
+	<param name="ListVal"></param>
+	<param name="FrtVal"></param>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.Model_Dly_Jud">
+	<summary>
+ 延迟模式+校验模式
+ 延迟读取后进行校验
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Buffer.IBufferList`1">
+	<summary>
+ 基于IList且有一定拓展的BufferList
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.Port.EliaChenSerialPort.Receive_Stra">
+	<summary>
+ 接收:直接由当前缓存中取数据(没有数据会回一个Length=0的空字节数组)
+ </summary>
+	<returns></returns>
+</member><member name="M:EliachenFw.Comm.CommPort.Port.EliaChenSerialPort.Receive_Way(EliachenFw.Comm.CommPort.ICommPortWay)">
+	<summary>
+ 接收:按照接口策略处理
+ </summary>
+	<param name="Way"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommonMethod.CRC16(System.Byte[],System.Byte@,System.Byte@)">
+	<summary>
+ CRC16校验编码
+ </summary>
+	<param name="data"></param>
+	<param name="ReturnDatalo"></param>
+	<param name="ReturnDatahi"></param>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.Model_Strgt_Jud_Dly_Jud">
+	<summary>
+ 直接模式+校验模式+延迟模式+校验模式
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommBufferElement.CheckBufferElement(System.Byte[])">
+	<summary>
+ 进行BufferElement的检查,加入缓存前的检查
+ </summary>
+	<param name="ArrByte"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommBufferElement.GetBufferElement(System.Byte[])">
+	<summary>
+ 获取BufferElement类的每一个项，解码前
+ </summary>
+	<param name="ArrByte"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommInterface.ICommBufferElement">
+	<summary>
+ 实现：用于通讯数据的存取与发送的缓存
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Buffer.BufferList`1">
+	<summary>
+ 基于List的缓存类
+ </summary>
+	<typeparam name="T"></typeparam>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.CommReset(System.Byte,System.Byte)">
+	<summary>
+ 复位通信单元
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.ListenState(System.Byte,System.Byte)">
+	<summary>
+ 召唤链路状态
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskDataOne(System.Byte,System.Byte)">
+	<summary>
+ 召唤1级数据
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskDataTwo(System.Byte,System.Byte)">
+	<summary>
+ 召唤2级数据
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskTimeSyn(System.Byte,System.Byte)">
+	<summary>
+ 对时,系统时间Now
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskTotally(System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 总召唤-&gt;获取遥信信息
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskDisturbanceDataTable(System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 获取扰动表
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskDisturbanceData(System.Byte,System.Byte,System.Int16,System.Byte)">
+	<summary>
+ 获取扰动数据
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_FaultNum"></param>
+	<param name="_Sectors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskStateChange(System.Byte,System.Byte,System.Int16,System.Byte)">
+	<summary>
+ 获取状态变位
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_FaultNum"></param>
+	<param name="_Sectors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskStateConfirm(System.Byte,System.Byte,System.Int16,System.Byte)">
+	<summary>
+ 状态确认，获取额定因子
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_FaultNum"></param>
+	<param name="_Sectors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskAccData(System.Byte,System.Byte,System.Byte,System.Int16,System.Byte)">
+	<summary>
+ 获取通道数据
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_FaultNum"></param>
+	<param name="_Acc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskAccConfirm(System.Byte,System.Byte,System.Byte,System.Int16,System.Byte)">
+	<summary>
+ 通道认可
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_FaultNum"></param>
+	<param name="_Acc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskDisConfirm(System.Byte,System.Byte,System.Byte,System.Int16,System.Byte)">
+	<summary>
+ 扰动确认
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_FaultNum"></param>
+	<param name="_Acc"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.AskFarComm(System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 获取遥测
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.Order_AskEleMeasure(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 召唤电镀量
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_Fun"></param>
+	<param name="_order"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.Order_AskControl_Choice(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 遥控选择
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_Fun"></param>
+	<param name="_Inf"></param>
+	<param name="On"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.Order_AskControl_Excute(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 遥控执行
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_Fun"></param>
+	<param name="_Inf"></param>
+	<param name="On"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.Order_AskControl_Pause(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 遥控撤销
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_Fun"></param>
+	<param name="_Inf"></param>
+	<param name="On"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Order.OrderMasterToSlave.Order_AskComm(System.Byte,System.Byte,System.Byte,System.Byte)">
+	<summary>
+ 通用分类读取
+ </summary>
+	<param name="_Addr"></param>
+	<param name="_Fcb"></param>
+	<param name="_Sectors"></param>
+	<param name="_GroupNum"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPortStatitics.CountRecv">
+	<summary>
+ 通信接口:数据接收次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPortStatitics.CountSend">
+	<summary>
+ 通信接口：数据发送次数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPortStatitics.SumSend">
+	<summary>
+ 统计总发送字节数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPortStatitics.SumRecv">
+	<summary>
+ 统计总接收字节数
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ICommPortStatitics">
+	<summary>
+ 通讯的统计
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.EliaChenDNS.GetAddr(System.String)">
+	<summary>
+ 通过DNS解析对应的IP地址
+ </summary>
+	<param name="Str"></param>
+	<returns>远程地址</returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.EliaChenDNS.GetLocalAddr">
+	<summary>
+ 通过DNS获取本机的ip地址
+ </summary>
+	<returns>本机地址的数组</returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ComPortWay.Model_Basic.CommDeal(EliachenFw.Comm.CommPort.ICommPort@)">
+	<summary>
+ 通讯处理的模式
+ </summary>
+	<param name="Comm"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ComPortWay.Model_Basic">
+	<summary>
+ 基类实现通讯的基本模式
+ </summary>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPortWay.TimeDelaySend">
+	<summary>
+ 时间:发送前的延迟
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:EliachenFw.Comm.CommPort.ICommPortWay.TimeOutRecv">
+	<summary>
+ 时间:接收数据触发后延迟检测缓冲区
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPortWay.CommDeal(EliachenFw.Comm.CommPort.ICommPort@)">
+	<summary>
+ 当次通讯获取的方法
+ </summary>
+	<param name="Comm"></param>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommPort.ICommPortWay.CommJug(System.Byte[])">
+	<summary>
+ 具有特定格式帧的校验
+ </summary>
+	<param name="ArrByte"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:EliachenFw.Comm.CommPort.ICommPortWay">
+	<summary>
+ 通讯收到数据后基本处理方式,核心是为了判定一次通讯的结束
+ 两种模型：1、延迟停等 2、字节流判断
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Data.EliaSql.EliaSqlHelper.GetProvName(EliachenFw.Data.EliaSql.EliaSqlHelper.EliaDBType)">
+	<summary>
+ 获取对应数据库类型的命名空间全称
+ </summary>
+	<param name="_DBType">数据库类型</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommOrder.OrderRead">
+	<summary>
+ 读命令的字节数组：用于通讯端口发送
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommOrder.OrderWrite">
+	<summary>
+ 写命令的字节数组：用于通讯端口发送
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommOrder.OrderWhen_TimeOut">
+	<summary>
+ 超时处理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommOrder.OrderWhen_OrderErr_Each">
+	<summary>
+ 命令错误处理:单次，失败后的处理
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommOrder.OrderWhen_OrderErr_Final">
+	<summary>
+ 命令错误处理:最终，最终处理失败后结果
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.CommInterface.ICommOrder.OrderCheck(EliachenFw.Buffer.BufferList{EliachenFw.Comm.CommInterface.ICommBufferElement})">
+	<summary>
+ 对于命令结果进行检测：目的是获取是否有符合要求的结果已进行随后的工作
+ </summary>
+	<param name="BufferList"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_5(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码asdu5,响应复位通讯
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_1(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码asdu1（01H）,遥信信息
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_2(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码asdu1（02H）,事故信号
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_23(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码asdu23(17H),扰动表
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_28(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码ASDU28（1CH） 带标志的状态变位传输准备就绪
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_29(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码ASDU29（1DH） 带标志的状态变位传输准备就绪
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_27(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码ASDU27（1BH） 被记录的通道传输准备就绪,获取额定值
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_30(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码ASDU30（1EH）传输扰动值,通道数据
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_9_50(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt,System.Type)">
+	<summary>
+ 解码ASDU50（32H）遥测值的获取
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_36(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码ASDU36(24H) 电度值的获取
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.DeCode_AsduInf.DeCode_Asdu_10(EliachenFw.Comm.Proj.Comm_IEC103.Code.AdvCode.AdvCodeSt.ASDUSt)">
+	<summary>
+ 解码ASDU10(0AH)通用分类
+ </summary>
+	<param name="_Asdu"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:EliachenFw.Comm.Proj.ModBusSlave.MB_Recv.DecodeRecvAdv(EliachenFw.Comm.Proj.ModBusSlave.MB_Recv,System.Byte,System.Type)">
+	<summary>
+ 用于还原数据区
+ </summary>
+	<param name="StBas">基本数据结构</param>
+	<param name="NumCount">单个数据长度</param>
+	<param name="Type"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

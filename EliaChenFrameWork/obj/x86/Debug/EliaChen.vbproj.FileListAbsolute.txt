@@ -1,0 +1,145 @@
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\EliaChen.exe.config
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\C5.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\Common.Logging.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\bin\Debug\Quartz.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130623)\CommModBus\obj\x86\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\EliaChen.exe.config
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\C5.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\Common.Logging.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\bin\Debug\Quartz.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.FormTestCommSms.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130624) - 驷马山\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\EliaChen.exe.config
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\C5.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\Common.Logging.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\bin\Debug\Quartz.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommSms.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130627)\CommModBus\obj\x86\Debug\EliaChen.SimpleTriggerExample.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.exe.config
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.exe
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.pdb
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.xml
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\C5.dll
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\Common.Logging.dll
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\Quartz.dll
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.DDp_Com.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommSms.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.SimpleTriggerExample.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormRep.resources
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.exe
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.xml
+E:\项目资料\DotNetProj\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\C5.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\Common.Logging.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\Quartz.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.DDp_Com.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommSms.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.SimpleTriggerExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.FormRep.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.exe.config
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\bin\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130704)\CommModBus\obj\x86\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\C5.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\Common.Logging.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\Quartz.dll
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.DDp_Com.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.FormTestCommSms.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.SimpleTriggerExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.FormRep.resources
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.xml
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.pdb
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\EliaChen.exe.config
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\bin\Debug\EliaChen.exe
+E:\MRHUWORK\EliaComm\EliaComm(规范20130729)\CommModBus\obj\x86\Debug\EliaChen.exe
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\C5.dll
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\Common.Logging.dll
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\Quartz.dll
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.DDp_Com.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.FormTestCom103_1.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.FormTestCommHuanShan.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.FormTestCommSms.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.SimpleTriggerExample.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.FormTest_ModBus_2.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.SimpleExample.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.Resources.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChen.FormRep.resources
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\EliaChenFrameWork.exe.config
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\EliaChenFrameWork.exe
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\EliaChenFrameWork.pdb
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\bin\Debug\EliaChenFrameWork.xml
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChenFrameWork.exe
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChenFrameWork.xml
+E:\项目资料\DotNetProj\EliaChenFrameWork\EliaComm(规范20130819)-103update\CommModBus\obj\x86\Debug\EliaChenFrameWork.pdb
