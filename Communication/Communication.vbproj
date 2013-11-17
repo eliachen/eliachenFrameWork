@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31716A72-6BAD-4C39-A9A3-CB191FB787EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Communication</RootNamespace>
+    <AssemblyName>Communication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Communication.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Communication.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_CommPort\1_ICommPort\ICommSever.vb" />
+    <Compile Include="1_CommPort\4_CommPortLogManager\Client\CommPortLogElement.vb" />
+    <Compile Include="1_CommPort\3_CommPortStatics\Model_BasicStatics.vb" />
+    <Compile Include="1_CommPort\4_CommPortLogManager\Client\CommPortLogManager.vb" />
+    <Compile Include="1_CommPort\4_CommPortLogManager\Sever\CommSeverLogElement.vb" />
+    <Compile Include="1_CommPort\4_CommPortLogManager\Sever\CommSeverLogManager.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\7eTcpClientLog.vb" />
+    <Compile Include="1_CommPort\2_CommPortDoneWay\Model_Basic.vb" />
+    <Compile Include="1_CommPort\2_CommPortDoneWay\Model_Dly.vb" />
+    <Compile Include="1_CommPort\2_CommPortDoneWay\Model_Dly_Valid.vb" />
+    <Compile Include="1_CommPort\2_CommPortDoneWay\Model_Strgt.vb" />
+    <Compile Include="1_CommPort\2_CommPortDoneWay\Model_Strgt_Valid.vb" />
+    <Compile Include="1_CommPort\2_CommPortDoneWay\Model_Strgt_Valid_Dly_Valid.vb" />
+    <Compile Include="1_CommPort\6_Tcp\DNS\DNS.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\0eTcpClient_Config.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\1eTcpClient_New.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\2eTcpClient_Connect.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\3eTcpClient_Recv.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\4eTcpClient_Send.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\5eTcpClient_Disconnect.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\6eTcpClient_Dispose.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\EventArgs\eTcpClinetErrEvent.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpClient\State\eTcpClientState.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\0eTcpSever_Config.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\1eTcpSever_New.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\6eTcpSever_Dispose.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\5eTcpSever_Statics.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\4eTcpSever_Pause.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\3eTcpSever_Stop.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\2eTcpSever_Start.vb" />
+    <Compile Include="1_CommPort\6_Tcp\eTcpSever\State\eTcpSeverState.vb" />
+    <Compile Include="1_CommPort\5_SerialPort\SerialPort.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1_CommPort\1_ICommPort\ICommPort.vb" />
+    <Compile Include="1_CommPort\1_ICommPort\ICommPortStatistics.vb" />
+    <Compile Include="1_CommPort\1_ICommPort\ICommPortWay.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Collections\Buffer.vbproj">
+      <Project>{b4815a5c-d337-45b2-bb2a-28e186a96bd5}</Project>
+      <Name>Buffer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
