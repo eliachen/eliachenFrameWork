@@ -1,15 +1,12 @@
 ﻿Imports System.IO.Ports
 Imports System.Threading.Thread
-Imports Communication.CommPort.ComPortStatics
-Imports Communication.CommPort.ComPortWay
+Imports EliaChen.CommPort.ComPortStatics
+Imports EliaChen.CommPort.ComPortWay
 
 Namespace CommPort
-    Public Class eSerialPort
+    Public Class SerialPort
         Inherits IO.Ports.SerialPort
         Implements ICommPort
-
-
-
 
         Public Property CommStatics As ICommPortStatitics Implements ICommPort.CommStatics
 
@@ -57,9 +54,9 @@ Namespace CommPort
         End Sub
 
         '字符串配置：COM1，9600，N，8，1
-        Sub New(ByVal ConfigStr As String)
+        Sub New(ByVal _ConfigStr As String)
             Me.New()
-            Me.CommCofigStr = CommCofigStr
+            Me.CommCofigStr = _ConfigStr
             If String.IsNullOrEmpty(Me.CommCofigStr.Length) Then
                 CommLog.LogError(Log.CommPortLogElement(Of String).MsgProcessDescriptionModel.optionset, _
                                   "串口字符串未配置")
@@ -72,7 +69,6 @@ Namespace CommPort
                 End Try
             End If
         End Sub
-
 
         Private Sub InitialByConfigStr(ByRef _OriSp As IO.Ports.SerialPort)
             Dim tmpConfigStr As String() = Me.CommCofigStr.Split(",")
@@ -228,7 +224,7 @@ DirSend:
         ''' 接收:直接由当前缓存中取数据(没有数据会回一个Length=0的空字节数组)
         ''' </summary>
         ''' <returns></returns>
-        Private Function Receive_Stra() As Byte() Implements ICommPort.Receive
+        Private Function Receive() As Byte() Implements ICommPort.Receive
             Try
                 Dim RecvLen As Integer = MyBase.BytesToRead
 

@@ -1,4 +1,5 @@
-﻿Imports Buffer
+﻿Imports EliaChen
+Imports EliaChen.Collection
 
 Namespace CommPort.Log
     ''' <summary>
@@ -8,16 +9,15 @@ Namespace CommPort.Log
     ''' <remarks></remarks>
     Public Class CommPortLogManager(Of T)
         Inherits BufferList(Of CommPortLogElement(Of T))
-
         Private Property Commport As ICommPort
 
         Sub New()
             MyBase.New()
         End Sub
-         Sub New(ByVal _CommPort As ICommPort)
+        Sub New(ByVal _CommPort As ICommPort)
             Me.Commport = _CommPort
         End Sub
-       
+
 
         Public Overridable Sub Log(item As CommPortLogElement(Of T))
             MyBase.Add(item)

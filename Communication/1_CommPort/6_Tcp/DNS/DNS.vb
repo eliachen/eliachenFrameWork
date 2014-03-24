@@ -2,7 +2,7 @@
 Imports System.Net
 Imports System.Net.Sockets
 Namespace CommPort
-    Public Class eDNS
+    Public Class DNSHelper
 
         ''' <summary>
         ''' 通过DNS解析对应的IP地址

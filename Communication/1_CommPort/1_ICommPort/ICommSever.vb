@@ -1,4 +1,5 @@
-﻿
+﻿Imports EliaChen.Collection
+
 Namespace CommPort
     Public Interface ICommSever(Of T)
         Inherits ICommPortStatitics
@@ -9,7 +10,7 @@ Namespace CommPort
         ''' <value></value>
         ''' <returns></returns>
         ''' <remarks></remarks>
-        Property CommClientList As Buffer.BufferList(Of T)
+        Property CommClientList As BufferList(Of T)
 
 
         ''' <summary>

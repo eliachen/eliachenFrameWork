@@ -1,4 +1,5 @@
-﻿Imports Buffer
+﻿Imports EliaChen
+Imports EliaChen.Collection
 
 Namespace CommPort.Log
 
