@@ -25,14 +25,21 @@
                 Me.MessageBody = message.ToArray
             End Sub
 
-            'Function 3 - Read Registers
-            Public Function SendFc3(address As Byte, start As UShort, registers As UShort) As SendCommMessage
+            ''' <summary>
+            '''  'Function 3 - Read Registers
+            ''' </summary>
+            ''' <param name="_SlaveID">测站ID</param>
+            ''' <param name="_StartRegIndex">开始寄存器编号</param>
+            ''' <param name="_RegCount">寄存器个数</param>
+            ''' <returns></returns>
+            ''' <remarks></remarks>
+            Public Function SendFc3(_SlaveID As Byte, _StartRegIndex As UShort, _RegCount As UShort) As SendCommMessage
                 'Function 3 request is always 8 bytes:
                 Dim message As Byte() = New Byte(7) {}
                 'Function 3 response buffer:
-                Dim response As Byte() = New Byte(5 + (2 * registers - 1)) {}
+                Dim response As Byte() = New Byte(5 + (2 * _RegCount - 1)) {}
                 'Build outgoing modbus message:
-                BuildMessage(address, CByte(3), start, registers)
+                BuildMessage(_SlaveID, CByte(3), _StartRegIndex, _RegCount)
                 Return Me
             End Function
         End Class

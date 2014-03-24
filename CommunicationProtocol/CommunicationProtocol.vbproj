@@ -71,7 +71,7 @@
     <Compile Include="2_CommProtocol\ModBusRtu\ModBusRtu.vb" />
     <Compile Include="2_CommProtocol\ModBusRtu\Msg\RtuBasicMessage.vb" />
     <Compile Include="2_CommProtocol\ModBusRtu\Msg\RtuRecvMessage.vb" />
-    <Compile Include="2_CommProtocol\ModBusRtu\Msg\RtuSendMessage.vb" />
+    <Compile Include="2_CommProtocol\ModBusRtu\Msg\SendMsg\RtuSendMessage.vb" />
     <Compile Include="CommonHelper.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

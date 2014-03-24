@@ -9,28 +9,36 @@ Imports System.Linq
 Public Class TestModBus_Rtu
 
     Dim Sp As New EliaChen.CommPort.SerialPort("COM1,9600,N,8,1")
-    Dim ss As New EliaChen.CommProtocol.ModBus.Rtu
+    Dim MbRtu As New EliaChen.CommProtocol.ModBus.Rtu
+
+    '数据获取与数据类型转换
     <TestMethod()>
     Public Sub TestFc3()
+        '开串口
         Sp.Open()
-        ss.CommPort = Sp
+        '串口与协议绑定
+        MbRtu.CommPort = Sp
 
- 
-        Dim rel = ss.Send(New Rtu.RtuSendMessage().SendFc3(1, 0, 10),
-                                                From s In ss.CommRecvBuffer
-                                                                    Select s)
-
+        Dim rel = MbRtu.Send(New Rtu.RtuSendMessage().SendFc3(1, 0, 10),
+                                                         From s In MbRtu.CommRecvBuffer
+                                                                            Select s)
 
 
         If rel Is Nothing Then
             Assert.Fail()
         Else
-            Dim l = rel(0).Data.ToList()
-            l.RemoveAt(0)
-            'l.RemoveAt(0)
-
-            Dim z = BitConverter.ToUInt16(New Byte() {99, 0}, 0)
-
+            Dim relsingle = rel.FirstOrDefault
+            Dim RelList As New List(Of Object)
+            RelList.Add(MbRtu.GetNumberList(Of Char)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of Int16)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of UInt16)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of Int32)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of UInt32)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of Single)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of Int64)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of UInt64)(relsingle))
+            RelList.Add(MbRtu.GetNumberList(Of Double)(relsingle))
+            RelList.Add(MbRtu.GetBitList(relsingle))
         End If
     End Sub
 

@@ -6,7 +6,6 @@
         Public MustOverride Property MessageResponse As Byte()
 
 
-
         Public Enum MessageTypeModel
             '缓存,回复
             Cache_Ack
