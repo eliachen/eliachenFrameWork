@@ -79,17 +79,17 @@
     <Compile Include="TestModBus_Rtu.vb" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Collections\Collection.vbproj">
+    <ProjectReference Include="..\EliaChen.Common\EliaChen.Common.vbproj">
       <Project>{B4815A5C-D337-45B2-BB2A-28E186A96BD5}</Project>
-      <Name>Collection</Name>
+      <Name>EliaChen.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CommunicationProtocol\CommunicationProtocol.vbproj">
+    <ProjectReference Include="..\EliaChen.CommunicationProtocol\EliaChen.CommunicationProtocol.vbproj">
       <Project>{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}</Project>
-      <Name>CommunicationProtocol</Name>
+      <Name>EliaChen.CommunicationProtocol</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Communication\Communication.vbproj">
+    <ProjectReference Include="..\EliaChen.Communication\EliaChen.Communication.vbproj">
       <Project>{31716A72-6BAD-4C39-A9A3-CB191FB787EE}</Project>
-      <Name>Communication</Name>
+      <Name>EliaChen.Communication</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />

@@ -7,15 +7,13 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{41EBBD9E-A4FD-487E-A285-4CEB315B41BA}</ProjectGuid>
+    <ProjectGuid>{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>TestCommunication</RootNamespace>
-    <AssemblyName>TestCommunication</AssemblyName>
+    <RootNamespace>EliaChen</RootNamespace>
+    <AssemblyName>Eliachen.CommunicationProtocol</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
-    <ReferencePath>$(DevEnvDir)PublicAssemblies\</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>TestCommunication.xml</DocumentationFile>
+    <DocumentationFile>Eliachen.CommunicationProtocol.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>TestCommunication.xml</DocumentationFile>
+    <DocumentationFile>Eliachen.CommunicationProtocol.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -48,17 +46,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
   </ItemGroup>
   <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
@@ -66,33 +62,66 @@
     <Import Include="System.Diagnostics" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
   <ItemGroup>
-    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
-      <Visible>False</Visible>
-    </CodeAnalysisDependentAssemblyPaths>
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="1_CommStation\CommStation.vb" />
+    <Compile Include="1_CommStation\Msg\SendCommMessage.vb" />
+    <Compile Include="1_CommStation\Parameter\CommStationConfig.vb" />
+    <Compile Include="1_CommStation\Parameter\CommStationStatistics.vb" />
+    <Compile Include="2_CommProtocol\ModBusRtu\ModBusRtu.vb" />
+    <Compile Include="2_CommProtocol\ModBusRtu\Msg\RtuBasicMessage.vb" />
+    <Compile Include="2_CommProtocol\ModBusRtu\Msg\RtuRecvMessage.vb" />
+    <Compile Include="2_CommProtocol\ModBusRtu\Msg\SendMsg\RtuSendMessage.vb" />
+    <Compile Include="2_CommProtocol\ModBusRtu\Msg\SendTrip\RtuSendTrip.vb" />
+    <Compile Include="CommonHelper.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="TestSerialPort.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_CommStation\Msg\RecvCommMessage.vb" />
+    <Compile Include="1_CommStation\Msg\CommTrip.vb" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EliaChen.Common\EliaChen.Common.vbproj">
       <Project>{B4815A5C-D337-45B2-BB2A-28E186A96BD5}</Project>
       <Name>EliaChen.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EliaChen.CommunicationProtocol\EliaChen.CommunicationProtocol.vbproj">
-      <Project>{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}</Project>
-      <Name>EliaChen.CommunicationProtocol</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EliaChen.Communication\EliaChen.Communication.vbproj">
       <Project>{31716A72-6BAD-4C39-A9A3-CB191FB787EE}</Project>
       <Name>EliaChen.Communication</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
