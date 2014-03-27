@@ -73,7 +73,7 @@
     <Compile Include="2_CommProtocol\ModBusRtu\Msg\RtuRecvMessage.vb" />
     <Compile Include="2_CommProtocol\ModBusRtu\Msg\SendMsg\RtuSendMessage.vb" />
     <Compile Include="2_CommProtocol\ModBusRtu\Msg\SendTrip\RtuSendTrip.vb" />
-    <Compile Include="CommonHelper.vb" />
+    <Compile Include="Helper\MathHelper.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -101,6 +101,7 @@
   <ItemGroup>
     <Compile Include="1_CommStation\Msg\RecvCommMessage.vb" />
     <Compile Include="1_CommStation\Msg\CommTrip.vb" />
+    <Compile Include="Helper\DataHelper.vb" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

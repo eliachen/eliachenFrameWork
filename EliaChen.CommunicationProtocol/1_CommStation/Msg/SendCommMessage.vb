@@ -3,7 +3,7 @@
 
         '默认带回复
         Public Property MessageType As MessageTypeModel = MessageTypeModel.Ack
-
+        '默认带
         Public Property MessageBody As Byte()
 
         Public Enum MessageTypeModel

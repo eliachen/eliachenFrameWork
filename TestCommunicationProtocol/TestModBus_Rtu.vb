@@ -3,15 +3,43 @@ Imports EliaChen.CommPort
 Imports EliaChen.CommProtocol.ModBus
 Imports System.Linq
 Imports EliaChen.CommProtocol.ModBus.Rtu
+Imports EliaChen.CommProtocol.Common
 
 
 <TestClass()>
 Public Class TestModBus_Rtu
 
-    Dim Sp As New EliaChen.CommPort.SerialPort("COM2,9600,N,8,1")
+    Dim Sp As New EliaChen.CommPort.SerialPort("COM1,9600,N,8,1")
     Dim MbRtu As New EliaChen.CommProtocol.ModBus.Rtu
 
-    
+    <TestMethod()>
+    Public Sub TestFc1()
+        '开串口
+        Sp.Open()
+        '串口与协议绑定
+        MbRtu.CommPort = Sp
+
+        Dim rel = MbRtu.SendMessage(New RtuSendMessage().SendFc01(1, 0, 10), From s In MbRtu.CommRecvBuffer
+                                                                                   Select s)
+
+
+        If rel Is Nothing Then
+            Assert.Fail()
+        Else
+            Dim relsingle = rel.FirstOrDefault
+            Dim RelList As New List(Of Object)
+            'RelList.Add(DataHelper.GetNumberList(Of Char)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of Int16)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of UInt16)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of Int32)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of UInt32)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of Single)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of Int64)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of UInt64)(relsingle.RecvMsg.Data))
+            'RelList.Add(DataHelper.GetNumberList(Of Double)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetBitList(relsingle.RecvMsg.Data))
+        End If
+    End Sub
 
     '数据获取与数据类型转换
     <TestMethod()>
@@ -21,7 +49,7 @@ Public Class TestModBus_Rtu
         '串口与协议绑定
         MbRtu.CommPort = Sp
 
-        Dim rel = MbRtu.SendMessage(New Rtu.RtuSendMessage().SendFc3(1, 0, 10), From s In MbRtu.CommRecvBuffer
+        Dim rel = MbRtu.SendMessage(New RtuSendMessage().SendFc03(1, 0, 10), From s In MbRtu.CommRecvBuffer
                                                                                    Select s)
 
 
@@ -30,16 +58,16 @@ Public Class TestModBus_Rtu
         Else
             Dim relsingle = rel.FirstOrDefault
             Dim RelList As New List(Of Object)
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of Char)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of Int16)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of UInt16)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of Int32)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of UInt32)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of Single)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of Int64)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of UInt64)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_NumberList(Of Double)(relsingle))
-            RelList.Add(Rtu.RtuSendMessage.GetFun3_BitList(relsingle))
+            RelList.Add(DataHelper.GetNumberList(Of Char)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of Int16)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of UInt16)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of Int32)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of UInt32)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of Single)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of Int64)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of UInt64)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetNumberList(Of Double)(relsingle.RecvMsg.Data))
+            RelList.Add(DataHelper.GetBitList(relsingle.RecvMsg.Data))
         End If
     End Sub
 
@@ -51,7 +79,7 @@ Public Class TestModBus_Rtu
         MbRtu.CommPort = Sp
 
         Dim rel
-        rel = MbRtu.SendMessage(New Rtu.RtuSendMessage().SendFc16(1, 0, 3, New Short() {1, 2, 3}),
+        rel = MbRtu.SendMessage(New RtuSendMessage().SendFc16(1, 0, 3, New Short() {1, 2, 3}),
                                                                         From s In MbRtu.CommRecvBuffer
                                                                                                     Select s)
         Dim rel2 = New RtuSendTrip().SendFunc16_Trip(1, 0, 3, New Short() {1, 3, 4})
@@ -62,7 +90,7 @@ Public Class TestModBus_Rtu
             Assert.Fail()
         Else
             Dim relsingle = rel.FirstOrDefault
-            End If
+        End If
 
     End Sub
 End Class
