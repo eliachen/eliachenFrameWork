@@ -10,6 +10,12 @@
 
             Private Sub BuildMessage(address As Byte, type As Byte, start As UShort, registers As UShort, message As Byte())
                 'Array to receive CRC bytes:
+                'Dim tmp As New RtuBasicMessage() With {.Address = address,
+                '                                       .Function = type,
+                '                                       .Data = New Byte() {CByte(start >> 8), CByte(start),
+                '                                                           CByte(registers >> 8), CByte(registers)}}
+
+
                 message(0) = address
                 message(1) = type
                 message(2) = CByte(start >> 8)

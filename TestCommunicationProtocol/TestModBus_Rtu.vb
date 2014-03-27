@@ -2,13 +2,13 @@
 Imports EliaChen.CommPort
 Imports EliaChen.CommProtocol.ModBus
 Imports System.Linq
-
+Imports EliaChen.CommProtocol.ModBus.Rtu
 
 
 <TestClass()>
 Public Class TestModBus_Rtu
 
-    Dim Sp As New EliaChen.CommPort.SerialPort("COM1,9600,N,8,1")
+    Dim Sp As New EliaChen.CommPort.SerialPort("COM2,9600,N,8,1")
     Dim MbRtu As New EliaChen.CommProtocol.ModBus.Rtu
 
     
