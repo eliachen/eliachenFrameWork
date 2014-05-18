@@ -20,6 +20,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EliaChen.Communication", "E
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EliaChen.CommunicationProtocol", "EliaChen.CommunicationProtocol\EliaChen.CommunicationProtocol.vbproj", "{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EliaChen.Data.Entity", "Eliachen.Data.Entity\EliaChen.Data.Entity.vbproj", "{B04876A3-41BE-40D9-8461-C1F9C0EE349C}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = EliaChenFrameWork.vsmdi
@@ -93,6 +95,16 @@ Global
 		{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6B9565D6-9FB1-46A1-9AD0-DC3C2257E71A}.Release|x86.ActiveCfg = Release|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B04876A3-41BE-40D9-8461-C1F9C0EE349C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
